@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shahbaz Dance Academy</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <% if (style) { %>
+        <link rel="stylesheet" href="<%= style %>">
+        <% } %>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="/static/logo.png" alt="HDA Logo">
+            HDA
+        </div>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/class-info">Class Info</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <%- body %>
+
+        <footer id="footer">
+            Copyright &copy; 2024 Shahbaz Dance Academy | All rights reserved
+        </footer>
+</body>
+
+</html>

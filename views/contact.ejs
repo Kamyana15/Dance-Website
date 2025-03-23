@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Shahbaz Dance Academy</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/styleContact.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="/static/logo.png" alt="HDA Logo">
+            HDA
+        </div>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/class-info">Class Info</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="contact-container">
+        <h2>Contact Form</h2>
+        <form class="contact-form" action="/contact" method="POST">
+            <input type="text" name="name" placeholder="Enter your name" required>
+            <input type="number" name="age" placeholder="Enter your age" required>
+            <input type="tel" name="phone" placeholder="Enter your phone number" required>
+            <input type="email" name="email" placeholder="Enter your Email ID" required>
+            <input type="text" name="address" placeholder="Enter your address" required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <footer id="footer">
+        Copyright &copy; 2024 Shahbaz Dance Academy | All rights reserved
+    </footer>
+</body>
+
+</html>
